@@ -82,10 +82,22 @@
 * Thread PoolExecutor 使用的语法
   * <img src="/Users/wangcx/Library/Application Support/typora-user-images/image-20221120170443117.png" alt="image-20221120170443117" style="zoom:50%;" />
 
-##### 6. python 线程池在web服务中的应用
+##### 6. python 线程池
+
+* 有了多线程threading，为什么还要用多进程multiprocessing
+  * <img src="/Users/wangcx/Library/Application Support/typora-user-images/image-20221120183415834.png" alt="image-20221120183415834" style="zoom:50%;"/>
+  * nultiproessing模块就是python为了解决GIL缺陷引入的一个模块，原理是用多进程在cpu上并行执行
+* 多进程的知识梳理：
+  * <img src="/Users/wangcx/Library/Application Support/typora-user-images/image-20221120183742592.png" alt="image-20221120183742592" style="zoom:40%;" />
+
+##### 7. python 线程池在web服务中的应用
 
 * web 服务的架构的特点
   * <img src="/Users/wangcx/Library/Application Support/typora-user-images/image-20221120181048372.png" style="zoom:50%;" />
 * 使用线程池ThreadPoolExecutor加速
   * 方便的将磁盘文件、数据库、远程API的IO调用并发执行
   * 线程池的线程数目不会无限的创建（导致系统挂掉），具有防御功能
+
+##### 8. 异步io asyncio
+
+* <img src="/Users/wangcx/Library/Application Support/typora-user-images/image-20221120183928791.png" alt="image-20221120183928791" style="zoom:40%;" />
