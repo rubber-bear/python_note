@@ -81,3 +81,11 @@
   * 使用线程池的语法比自己新建线程执行线程更加简洁
 * Thread PoolExecutor 使用的语法
   * <img src="/Users/wangcx/Library/Application Support/typora-user-images/image-20221120170443117.png" alt="image-20221120170443117" style="zoom:50%;" />
+
+##### 6. python 线程池在web服务中的应用
+
+* web 服务的架构的特点
+  * <img src="/Users/wangcx/Library/Application Support/typora-user-images/image-20221120181048372.png" style="zoom:50%;" />
+* 使用线程池ThreadPoolExecutor加速
+  * 方便的将磁盘文件、数据库、远程API的IO调用并发执行
+  * 线程池的线程数目不会无限的创建（导致系统挂掉），具有防御功能
