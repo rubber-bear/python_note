@@ -64,3 +64,15 @@
   * 怎样规避GIL带来的限制
     * 用于io密集性计算
     * multiprocessing多进程机制实现并行计算，利用多核cpu应对
+
+##### 4. python 线程池
+
+* 线程池的原理
+  * <img src="/Users/wangcx/Library/Application Support/typora-user-images/image-20221120165850713.png" alt="image-20221120165850713" style="zoom:30%;" />
+* 使用线程池的好处
+  * 提升性能： 因为减去了大量的新建，终止线程的开销，重用了线程资源
+  * 适用场景：适合处理突发性的大量请求或需要大量线程完成的任务、但是实际任务处理较短
+  * 防御功能：能有效的避免系统因为创建线程过多，而导致系统负荷过大相应变慢等问题
+  * 使用线程池的语法比自己新建线程执行线程更加简洁
+* Thread PoolExecutor 使用的语法
+  * <img src="/Users/wangcx/Library/Application Support/typora-user-images/image-20221120170443117.png" alt="image-20221120170443117" style="zoom:50%;" />
