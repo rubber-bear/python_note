@@ -65,7 +65,12 @@
     * 用于io密集性计算
     * multiprocessing多进程机制实现并行计算，利用多核cpu应对
 
-##### 4. python 线程池
+##### 4. python 线程安全
+
+* 线程安全：线程安全是指某个函数、函数库在多线程环境中被调用时候，能狗正确的处理多个线程之间的共享变量，使程序能够正确完成
+* 由于线程只想随时会发生切换，就操成了不可预料的结果，出现线程不安全
+
+##### 5. python 线程池
 
 * 线程池的原理
   * <img src="/Users/wangcx/Library/Application Support/typora-user-images/image-20221120165850713.png" alt="image-20221120165850713" style="zoom:30%;" />
